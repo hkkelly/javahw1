@@ -20,6 +20,20 @@
 
 <script>
 function getHeadline() {
-  console.log($("p").text())
+  return $("h1").text();
 }
+function changeHeadlines() {
+  $("h1").text("New headline");
+  $("h2").text("Wikipedia article");
+}
+
+function logHeadlines() {
+  console.log($("h1").text());
+  console.log($("h2").text());
+}
+
+</script>
+
+<script>
+var string = getHeadline();
 </script>
